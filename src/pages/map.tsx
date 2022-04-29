@@ -11,12 +11,9 @@ const styles = {
     padding: '4rem 0',
     flex: 1,
     display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  title: {
-    textAlign: 'center',
+    'flex-direction': 'column',
+    'justify-content': 'center',
+    'align-items': 'center',
   },
 }
 
@@ -30,7 +27,7 @@ export default function Map() {
       </Head>
 
       <main style={styles.main}>
-        <h1 style={styles.title}>
+        <h1>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
