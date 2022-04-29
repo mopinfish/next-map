@@ -1,3 +1,4 @@
+import { VStack, Heading } from '@chakra-ui/react'
 import Head from 'next/head'
 //import Image from 'next/image'
 import MapPane from '../components/MapPane'
@@ -5,14 +6,6 @@ import MapPane from '../components/MapPane'
 const styles = {
   container: {
     padding: '0 2rem',
-  },
-  main: {
-    minHeight: '100vh',
-    padding: '4rem 0',
-    display: 'flex',
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
   },
 }
 
@@ -25,9 +18,12 @@ export default function Map() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main style={styles.main}>
-        <MapPane />
-      </main>
+      <VStack width="full">
+        <Heading as="h3" size="lg">
+          Next Map Page
+        </Heading>
+      </VStack>
+      <MapPane />
     </div>
   )
 }

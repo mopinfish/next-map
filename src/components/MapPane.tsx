@@ -1,4 +1,5 @@
 // OpenLayers読み込み
+import { Box, VStack } from '@chakra-ui/react'
 import Map from 'ol/Map'
 import View from 'ol/View'
 import TileLayer from 'ol/layer/Tile'
@@ -34,7 +35,9 @@ const MapPane = () => {
   }, [containerRef])
 
   return (
-    <div className={'map'} ref={containerRef} style={{ minWidth: '800px', minHeight: '800px' }} />
+    <VStack width="full">
+      <Box className={'map'} width="full" height="600px" ref={containerRef}></Box>
+    </VStack>
   )
 }
 
