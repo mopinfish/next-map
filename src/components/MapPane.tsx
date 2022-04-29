@@ -4,7 +4,6 @@ import Map from "ol/Map";
 import View from "ol/View";
 import TileLayer from "ol/layer/Tile";
 import OlSourceOSM from "ol/source/OSM";
-import XYZ from "ol/source/XYZ";
 import { fromLonLat } from "ol/proj";
 import "ol/ol.css";
 
