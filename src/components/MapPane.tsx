@@ -1,10 +1,10 @@
-import React, { useEffect, useRef } from 'react'
 // OpenLayers読み込み
 import Map from 'ol/Map'
 import View from 'ol/View'
 import TileLayer from 'ol/layer/Tile'
-import OlSourceOSM from 'ol/source/OSM'
 import { fromLonLat } from 'ol/proj'
+import OlSourceOSM from 'ol/source/OSM'
+import React, { useEffect, useRef } from 'react'
 import 'ol/ol.css'
 
 // 何故かMapPaneが2回マウントされるため、地図が作成されたかを管理するための変数を導入している。解消されたら下記は削除する。
