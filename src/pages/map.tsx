@@ -9,11 +9,10 @@ const styles = {
   main: {
     minHeight: '100vh',
     padding: '4rem 0',
-    flex: 1,
     display: 'flex',
-    'flex-direction': 'column',
-    'justify-content': 'center',
-    'align-items': 'center',
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 }
 
@@ -27,10 +26,6 @@ export default function Map() {
       </Head>
 
       <main style={styles.main}>
-        <h1>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
         <MapPane />
       </main>
     </div>
