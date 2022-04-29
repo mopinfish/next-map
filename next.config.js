@@ -4,5 +4,5 @@ module.exports = {
   reactStrictMode: true,
   assetPrefix: urlPrefix,
   basePath: urlPrefix,
-  trailingSlash: true
+  trailingSlash: true,
 }

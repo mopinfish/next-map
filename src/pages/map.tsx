@@ -1,10 +1,10 @@
 import Head from 'next/head'
 //import Image from 'next/image'
-import MapPane from '../components/MapPane';
+import MapPane from '../components/MapPane'
 
 const styles = {
   container: {
-    padding: '0 2rem'
+    padding: '0 2rem',
   },
   main: {
     minHeight: '100vh',
@@ -13,16 +13,15 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   title: {
-    textAlign: 'center'
-  }
+    textAlign: 'center',
+  },
 }
 
 export default function Map() {
   return (
-
     <div style={styles.container}>
       <Head>
         <title>Create Next App</title>
@@ -37,7 +36,6 @@ export default function Map() {
 
         <MapPane />
       </main>
-
     </div>
   )
 }
